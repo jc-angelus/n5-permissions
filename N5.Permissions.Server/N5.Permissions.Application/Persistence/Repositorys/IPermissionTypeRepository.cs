@@ -1,0 +1,14 @@
+﻿using ErrorOr;
+using N5.Permissions.Domain.Entities;
+
+namespace N5.Permissions.Application.Persistence.Repositories
+{
+    /// <summary>
+    /// Developer: Johans Cuellar
+    /// Date: 07/26/2024
+    /// </summary>
+    public interface IPermissionTypeRepository
+    {
+        public Task<ErrorOr<List<PermissionType>>> GetPermissionTypes();        
+    }
+}
